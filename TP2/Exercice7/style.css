@@ -1,0 +1,77 @@
+*{
+    background-color: turquoise;
+}
+.container{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.circle{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #00897b;
+}
+.anim-1{
+    margin-left: 75px;
+    animation: animation-1 2s infinite alternate ease-in-out;
+}
+.anim-2{
+    animation: animation-2 2s infinite alternate ease-in-out;
+}
+.anim-3{
+    animation: animation-3 2s infinite alternate ease-in-out;
+}
+
+@keyframes animation-1 {
+    0%{
+        margin-top: 0;
+    }
+    100%{
+        margin-top: 160px;
+        background-color: #C51162;
+    }
+    
+}
+@keyframes animation-2 {
+    0%{
+        margin-top: 0;
+    }
+    100%{
+        margin-top: 160px;
+        background-color: #F9A825;
+    }
+    
+}
+
+@keyframes animation-3 {
+    0%{
+        background-color: #D500F9;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 160px;
+        margin-bottom: 160px;
+    }
+    33%{
+        margin-top: 0;
+        margin-left: 160px;
+        margin-right: 0;
+        margin-bottom: 160px;
+    }
+    66%{
+        margin-top: 160px;
+        margin-left: 0;
+        margin-right: 160px;
+        margin-bottom: 0;
+    }
+    100%{
+        margin-top: 160px;
+        margin-left: 160px;
+        margin-right: 0;
+        margin-bottom: 0px;
+        background-color: #E6EE9C;
+    }
+
+    
+}

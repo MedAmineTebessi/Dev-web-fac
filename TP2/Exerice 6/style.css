@@ -1,0 +1,11 @@
+#img{
+    transition: transform 2s linear;
+}
+
+#img.animate1{
+    transform: translateX(500px) scaleX(1);
+}
+
+#img.animate2{
+    transform: translateX(0) scaleX(-1);
+}

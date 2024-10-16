@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 4</title>
+    <style>
+        div { width:430px;height:200px;position:relative;border: 1px solid black;}
+        p{ background-color : red; width : 120px; height:100px; position:absolute; top:10px; left:10px;
+         padding :5px;background-color: red;
+         transition: all 5s ease;
+        }
+        p:active{ 
+            left: 300px;
+            top:10px;
+            color: pink;
+        }
+        
+        .train1 img{
+            animation: moveTrain 5s linear infinite;
+        }
+            @keyframes moveTrain {
+                0%{
+                    transform: translate(0, 0) rotate(5deg);
+                }
+                50%{
+                    transform: translate(150px, 0) rotate(10deg);
+                }
+                100%{
+                    transform: translate(300px, 0) rotate(-10deg);
+                }
+                
+            }
+        .train2 img{
+            animation: moveTrain2 5s linear forwards;
+        }
+            @keyframes moveTrain2 {
+                0%{
+                    transform: translate(300px, 0);
+                }
+                50%{
+                    transform: translate(150px, 0) rotate(10deg);
+                }
+                100%{
+                    transform: translateX(0) rotate(-10deg);
+                }
+                
+            }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p> texte qui se déplace tant qu'on appuie sur le bouton de la souris </p>
+    </div>
+
+    <div class="train1">
+        <img  src="C:/Users/atebe/OneDrive/Documents/TP DevWebAvancéeAmine2024/TP2/Resources/train.gif">
+    </div>
+
+    <div class="train2">
+        <img src="C:/Users/atebe/OneDrive/Documents/TP DevWebAvancéeAmine2024/TP2/Resources/train.gif">
+    </div>
+
+
+
+</body>

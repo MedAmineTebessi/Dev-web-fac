@@ -1,0 +1,27 @@
+.container {
+    text-align: center;
+    margin-top: 150px;
+}
+
+img {
+    transition: opacity 1s ease;
+    opacity: 1;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.btndiv{
+    text-align: center;
+    margin-top: 50px;
+}
+#btn{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

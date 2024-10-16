@@ -1,0 +1,15 @@
+#number {
+    width: .5em;
+    overflow: hidden;
+    font: 32px monospace;
+    cursor: pointer;
+   }
+
+   #defile {
+    display: inline-block;
+    transition: transform 2s linear;
+   }
+
+   #defile.animate {
+    transform: translateX(-100%);
+   }

@@ -1,0 +1,6 @@
+h2{
+    transition: transform 2s ease;
+}
+h2:hover{
+    transform: rotate(-90deg) scale(1.2);
+}

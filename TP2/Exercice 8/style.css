@@ -1,0 +1,64 @@
+.Ctitre{
+    background-color: aqua;
+    border-radius: 10%;
+    width: 1350px;
+}
+h1{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+h1{
+    animation: animateTitre 5s linear forwards 6 ;
+}
+@keyframes animateTitre {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(1200px);
+    }  
+}
+
+.container{
+    margin-top: 50px;
+    display:flex;
+    justify-content: center;
+}
+
+#divvide{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 300px;
+    background-color: skyblue;
+    border: solid blue;
+    font-weight: bold;
+}
+#Animdiv{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 300px;
+    background-color: skyblue;
+    border: solid blue;
+    font-weight: bold;
+    animation: anim 5s alternate infinite ;
+}
+@keyframes anim {
+    0%{
+        opacity: 25%;
+        transform: scale(1);
+        transform: rotate(0);
+    }
+    50%{
+        opacity:50%;
+        transform: scale(1.25);
+        transform: rotate(-30deg);
+    }
+    100%{
+        opacity: 100%;
+        transform: scale(1.5);
+        transform: rotate(30deg);
+    }
+}
